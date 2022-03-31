@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package loadingTestx.loadingTestx;
+
+option go_package="github.com/WinBeyond/loadingTest/grpc-go/loadingTestx/loadingTestx";
+
+
+service Axxxx {
+    rpc SayHello (HelloRequest) returns (HelloReply);
+}
+
+
+message HelloRequest {
+    string msg = 1;
+}
+message HelloReply {
+    string msg = 1;
+    string code = 2;
+}
